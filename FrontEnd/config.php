@@ -1,4 +1,5 @@
 <?php
     $servidor = 'http://localhost/primeiroProjeto/BackEnd/';
-    $token = hash('sha256', $_SESSION['chave'] . date('Y-m-d'));
+    $chave = 'ChavedeSegurança'; // mesma que no back-end
+    $token = hash('sha256', $chave . date('Y-m-d'));
 ?>

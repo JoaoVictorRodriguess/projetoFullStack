@@ -7,11 +7,11 @@
     {
         require_once('chave.php');
         $api_token = $_POST['api_token'];
-        if ($api_token == '$hash')
+        if ($api_token == $hash)
         {
 
     //Conexão ao banco
-    require_once('../dbConnect.php');
+    require_once('dbConnect.php');
 
     //Define a coleção na nossa Conexão
     mysqli_set_charset($conn, $charset);
